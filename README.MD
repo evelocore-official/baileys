@@ -1,18 +1,20 @@
+# 💫 TERA BAILEYS
+
+Custom WhatsApp library built on Baileys — enhanced, modernized, and elegant.
+
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <div align="center">
-  <h1>💫 TERA BAILEYS </h1>
-  <p><em>Custom WhatsApp library built upon Baileys — enhanced, modernized, and elegant.</em></p>
-</p>
+  <h1>💫 TERA BAILEYS</h1>
+  <p><em>A custom WhatsApp library built upon Baileys — enhanced, modernized, and elegant.</em></p>
 
-  <br><br>
+<br><br>
 
-<p>
-  <!-- WhatsApp Channel -->
-  <a href="https://whatsapp.com/channel/0029VbB5gkZ6GcGHtBbwmD3m">
-    <img src="https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?logo=whatsapp&logoColor=white" alt="WhatsApp Channel" />
-  </a>
-</p>
+  <p>
+    <a href="https://whatsapp.com/channel/0029VbB5gkZ6GcGHtBbwmD3m">
+      <img src="https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?logo=whatsapp&logoColor=white" alt="WhatsApp Channel" />
+    </a>
+  </p>
 </div>
 
 <div align="center">
@@ -20,80 +22,89 @@
 </div>
 
 > [!CAUTION]
-> `tera-baileys` The old channel was banned due to an error by one of the admins, so we moved the information to the new channel.
-> Built on top of the WhiskeySockets/Baileys project. All original core logic credits go to their team. tera-baileys extends it with thoughtful UX and DX improvements.
-> 🙌 Contributors outside the Baileys code
-Thanks to the following awesome contributors who help improve this project 💖
+> The old Tera Baileys channel was closed due to an admin error, and all updates have been moved to the new channel (linked above).
+> This project is built on top of the WhiskeySockets/Baileys project. All original core logic credits belong to that team. Tera Baileys extends it with UX and DX improvements.
+
 ---
 
-
 ## 📌 Overview
->  `tera-baileys` is a refined version of the Baileys library with cleaner API usage, exclusive features like album messaging, newsletter controls, and full-size profile uploads — tailored for modern WhatsApp automation needs.
 
-> **Update** 
-> All update information is now redirected to the WhatsApp channel check at the bottom of the "homepage".
+`tera-baileys` is an enhanced version of the Baileys library with cleaner API usage and modern features such as album messaging, newsletter controls, and full-size profile uploads — designed for modern WhatsApp automation.
 
-> Udpate changelog see on our WhatsApp channel
+> **Updates:**
+> All update information is now available on the WhatsApp channel (see homepage section).
 
 ---
 
 ## 📦 Installation
 
-### Via `package.json`
+### Via package.json
 
-Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
+To use the forked version of Baileys:
 
 ```json
-@whiskeysockets/baileys
-"dependencies": {
+{
+  "dependencies": {
     "@whiskeysockets/baileys": "npm:tera-baileys"
-}
-```
-```json
-@adiwajsing/baileys
-"dependencies": {
-    "@adiwajshing/baileys": "npm:tera-baileys"
+  }
 }
 ```
 
-Or via terminal non fork
+Or for the alternative package:
+
+```json
+{
+  "dependencies": {
+    "@adiwajshing/baileys": "npm:tera-baileys"
+  }
+}
+```
+
+Alternatively, install directly (non-fork):
+
 ```bash
 npm install elaina-bail@npm:tera-baileys
 ```
 
-Importing (for those who don't fork another repository)
-ESM & CJS
+### Importing
 
-> ESM
-```bash
-import makeWASocket from 'tera-baileys
+#### ESM
+
+```js
+import makeWASocket from 'tera-baileys';
 ```
 
-> CJS
-```bash
-const { default: makeWASocket } = require('tera-baileys')
+#### CJS
+
+```js
+const { default: makeWASocket } = require('tera-baileys');
 ```
+
 ---
-🌟 Key Features
-| Category | Description |
-|---|---|
-|channels | Seamlessly send messages to WhatsApp Channels. |
-| 🖱️ Buttons | Create interactive messages with button options and quick replies. |
-| 🖼️ Albums | Send grouped images or videos as an album (carousel-like format). |
-| 👤 LID Grouping | Handle group operations using the latest @lid addressing style. |
-| 🤖 AI Message Style | Add a stylized “AI” icon to messages. |
-| 📷 HD Profile Pics | Upload full-size profile pictures without cropping. |
-| 🔐 Pairing Code | Generate custom alphanumeric pairing codes. |
-| 🛠️ Dev Experience | Reduced noise from logs with optimized libsignal printouts. |
+
+## 🌟 Key Features
+
+| Category         | Description                                         |
+| ---------------- | --------------------------------------------------- |
+| Channels         | Send messages to WhatsApp channels seamlessly.      |
+| Buttons          | Interactive messages with quick reply options.      |
+| Albums           | Group images or videos into carousel-style albums.  |
+| LID Grouping     | Use modern @lid addressing for group operations.    |
+| AI Message Style | Display messages with an AI-style icon.             |
+| HD Profile Pics  | Upload full-size profile pictures without cropping. |
+| Pairing Code     | Generate custom alphanumeric pairing codes.         |
+| Dev Experience   | Reduced logging noise and optimized performance.    |
+
 ---
 
 ## 🚀 Features & Usage
 
 ### 📬 Newsletter Control
-Kelola WhatsApp Newsletter (Channel), mulai dari pembuatan hingga interaksi pesan.
+
+Manage WhatsApp newsletters (channels), including creation and messaging.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example</strong></summary>
 
 ```js
 // Create a newsletter
@@ -112,15 +123,17 @@ await sock.newsletterReactMessage(
   "🔥"
 );
 ```
+
 </details>
 
 ---
 
 ### 📌 Interactive Messaging
-Kirim pesan interaktif menggunakan tombol untuk meningkatkan interaksi pengguna.
+
+Send interactive messages with buttons to improve engagement.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example</strong></summary>
 
 ```js
 const buttons = [
@@ -141,10 +154,11 @@ await sock.sendMessage(id, {
 ---
 
 ### 🖼️ Send Album
-Kirim beberapa media (gambar atau video) dalam satu pesan album.
+
+Send multiple images or videos as a single album message.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example</strong></summary>
 
 ```js
 const media = [
@@ -152,10 +166,10 @@ const media = [
   { video: { url: "https://example.com/clip.mp4" } }
 ];
 
-await sock.sendMessage(
-  id,
-  { album: media, caption: "Memories 💫" }
-);
+await sock.sendMessage(id, {
+  album: media,
+  caption: "Memories 💫"
+});
 ```
 
 </details>
@@ -163,14 +177,14 @@ await sock.sendMessage(
 ---
 
 ### 🔐 Custom Pairing Code
-Pairing perangkat WhatsApp menggunakan kode kustom.
+
+Generate a pairing code for WhatsApp device linking.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example</strong></summary>
 
 ```js
-const code = await sock.requestPairingCode("94xxxxxxxxxx","TERA01");
-
+const code = await sock.requestPairingCode("94xxxxxxxxxx", "TERA01");
 console.log("Pairing Code:", code);
 ```
 
@@ -179,10 +193,11 @@ console.log("Pairing Code:", code);
 ---
 
 ### 📊 Poll Creation
-Buat polling untuk voting cepat di chat atau grup.
+
+Create polls for quick voting in chats or groups.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example</strong></summary>
 
 ```js
 await sock.sendMessage(id, {
@@ -199,10 +214,11 @@ await sock.sendMessage(id, {
 ---
 
 ### 📍 Location Sharing
-Bagikan lokasi lengkap dengan koordinat dan alamat.
+
+Share a location with coordinates and address information.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example</strong></summary>
 
 ```js
 await sock.sendMessage(id, {
@@ -220,11 +236,11 @@ await sock.sendMessage(id, {
 ---
 
 ### 👥 Group Management
-Kelola grup WhatsApp: membuat grup, menambah anggota, dan memperbarui deskripsi.
 
+Create groups, add members, and update group descriptions.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example</strong></summary>
 
 ```js
 const group = await sock.groupCreate(
@@ -233,20 +249,19 @@ const group = await sock.groupCreate(
 );
 
 await sock.groupAdd(group.id, [number3]);
-await sock.groupUpdateDescription(group.id,"This is our awesome group!"
-);
+await sock.groupUpdateDescription(group.id, "This is our awesome group!");
 ```
 
 </details>
 
 ---
 
-### 🐞 Menemukan Bug?
+### 🐞 Found a Bug?
 
-Jika Anda menemukan bug atau kendala saat menggunakan proyek ini, silakan lakukan salah satu opsi berikut:
+If you encounter a bug or issue, you can:
 
-- **Buka Issue** melalui website resmi (segera hadir)
-- **Hubungi maintainer langsung** melalui WhatsApp
+* Report it via the official issue tracker (coming soon)
+* Contact the maintainer directly on WhatsApp
 
 <p align="center">
   <a href="https://wa.me/94786802371" target="_blank" rel="noopener noreferrer">
@@ -256,14 +271,15 @@ Jika Anda menemukan bug atau kendala saat menggunakan proyek ini, silakan lakuka
     />
   </a>
 </p>
+
 <details>
-<summary>🙏 <strong>TQTO (Thanks To)</strong></summary>
+<summary>🙏 Thanks To</summary>
 
-Terima kasih kepada semua pihak yang telah memberikan dukungan, inspirasi, serta kontribusi—baik secara langsung maupun tidak langsung—dalam pengembangan proyek ini:
+Special thanks to everyone who contributed inspiration and support:
 
-- **Allah SWT** — atas segala rahmat, kemudahan, dan perlindungan-Nya.
-- **Orang Tua** — atas kasih sayang, doa, dan dukungan yang tiada henti.
-- **RexxHayanasi (Saya)** — pengembang utama proyek ini.
+* Allah SWT — for guidance and blessings.
+* Parents — for endless love and encouragement.
+* RexxHayanasi — project lead and developer.
 
 </details>
 
@@ -271,9 +287,9 @@ Terima kasih kepada semua pihak yang telah memberikan dukungan, inspirasi, serta
 <tr>
 <td align="center">
 <a href="https://github.com/nimesh-piyumal">
-<img src="https://avatars.githubusercontent.com/u/150516773?v=4" width="80px;" style="border-radius:50%;" alt="Rexx"/>
+<img src="https://avatars.githubusercontent.com/u/150516773?v=4" width="80px;" style="border-radius:50%;" alt="Rexx" />
 <br />
-<sub><b>Nimesh Piyumal [ developer project ]</b></sub>
+<sub><b>Nimesh Piyumal — project developer</b></sub>
 </a>
 </td>
 </tr>
