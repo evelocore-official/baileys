@@ -87,13 +87,13 @@ const { default: makeWASocket } = require('tera-baileys');
 | Category         | Description                                         |
 | ---------------- | --------------------------------------------------- |
 | Channels         | Send messages to WhatsApp channels seamlessly.      |
-| Buttons          | Interactive messages with quick reply options.      |
-| Albums           | Group images or videos into carousel-style albums.  |
-| LID Grouping     | Use modern @lid addressing for group operations.    |
-| AI Message Style | Display messages with an AI-style icon.             |
-| HD Profile Pics  | Upload full-size profile pictures without cropping. |
-| Pairing Code     | Generate custom alphanumeric pairing codes.         |
-| Dev Experience   | Reduced logging noise and optimized performance.    |
+| 🖱️ Buttons          | Interactive messages with quick reply options.      |
+| 🖼️ Albums           | Group images or videos into carousel-style albums.  |
+| 👤 LID Grouping     | Use modern @lid addressing for group operations.    |
+| 🤖 AI Message Style | Display messages with an AI-style icon.             |
+| 📷 HD Profile Pics  | Upload full-size profile pictures without cropping. |
+| 🔐 Pairing Code     | Generate custom alphanumeric pairing codes.         |
+| 🛠️ Dev Experience   | Reduced logging noise and optimized performance.    |
 
 ---
 
@@ -277,9 +277,7 @@ If you encounter a bug or issue, you can:
 
 Special thanks to everyone who contributed inspiration and support:
 
-* Allah SWT — for guidance and blessings.
-* Parents — for endless love and encouragement.
-* RexxHayanasi — project lead and developer.
+* Nimesh Piyumal — project lead and developer.
 
 </details>
 
