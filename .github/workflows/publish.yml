@@ -19,10 +19,7 @@ jobs:
           
       - name: Install dependencies
         run: yarn install
-        
-      - name: Build TypeScript
-        run: yarn run build:tsc
-
+  
       - name: Publish to NPM
         run: npm publish
         env:
