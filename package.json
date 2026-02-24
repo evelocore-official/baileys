@@ -1,6 +1,6 @@
 {
   "name": "tera-baileys",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Custom Baileys WhatsApp API for ESM / CJS",
   "keywords": [
     "baileys", 
