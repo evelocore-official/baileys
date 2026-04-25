@@ -17,10 +17,6 @@ Custom WhatsApp library built on Baileys — enhanced, modernized, and elegant.
   </p>
 </div>
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b636-4676-a213-39d67b2d5d67.gif" width="100%">
-</div>
-
 > [!CAUTION]
 > The old Tera Baileys channel was closed due to an admin error, and all updates have been moved to the new channel (linked above).
 > This project is built on top of the WhiskeySockets/Baileys project. All original core logic credits belong to that team. Tera Baileys extends it with UX and DX improvements.
@@ -38,32 +34,8 @@ Custom WhatsApp library built on Baileys — enhanced, modernized, and elegant.
 
 ## 📦 Installation
 
-### Via package.json
-
-To use the forked version of Baileys:
-
-```json
-{
-  "dependencies": {
-    "@whiskeysockets/baileys": "npm:tera-baileys"
-  }
-}
-```
-
-Or for the alternative package:
-
-```json
-{
-  "dependencies": {
-    "@adiwajshing/baileys": "npm:tera-baileys"
-  }
-}
-```
-
-Alternatively, install directly (non-fork):
-
 ```bash
-npm install elaina-bail@npm:tera-baileys
+npm install tera-baileys
 ```
 
 ### Importing
@@ -262,35 +234,3 @@ If you encounter a bug or issue, you can:
 
 * Report it via the official issue tracker (coming soon)
 * Contact the maintainer directly on WhatsApp
-
-<p align="center">
-  <a href="https://wa.me/94786802371" target="_blank" rel="noopener noreferrer">
-    <img
-      alt="Chat on WhatsApp"
-      src="https://img.shields.io/badge/Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
-    />
-  </a>
-</p>
-
-<details>
-<summary>🙏 Thanks To</summary>
-
-Special thanks to everyone who contributed inspiration and support:
-
-* Nimesh Piyumal — project lead and developer.
-
-</details>
-
-<table>
-<tr>
-<td align="center">
-<a href="https://github.com/nimesh-piyumal">
-<img src="https://avatars.githubusercontent.com/u/150516773?v=4" width="80px;" style="border-radius:50%;" alt="Rexx" />
-<br />
-<sub><b>Nimesh Piyumal — project developer</b></sub>
-</a>
-</td>
-</tr>
-</table>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="transform: rotate(180deg);">
